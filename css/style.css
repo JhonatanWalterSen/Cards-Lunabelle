@@ -1,0 +1,82 @@
+:root{
+    --Lato: 'Lato', sans-serif;
+    --Sans-s:  sans-serif, 'Lato';
+    --bk-color:#28334a;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--bk-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+p, .button{font-family: var(--Lato);}
+h3{font-family: var(--Sans-s); margin: 0;}
+
+.container{
+     max-width: 1100px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #f5f5f5;
+}
+h2{
+    flex: 0 1 100%;
+    text-align: center;
+    font-family: var(--Lato);
+    font-size: 2em;
+
+}
+img{
+    max-width: 100%;
+}
+.card{
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+.price{
+    color: #dd0021;
+}
+.details{
+    padding-left: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.details h3{
+    font: 1.2em;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+.button{
+    background-color: #F8DE44;
+    color :#28334A;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .8rem 3rem;
+}
+
+
+/* mayora 480 */
+@media screen and (min-width:480px){
+    
+    /* contenido principal para Flexbox */
+    .main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .card{
+        flex: 0 1 calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width:768px){
+    .card{
+        flex: 0 1 calc(33% - 1rem);
+    }
+}
+
+
+/* menor  max-width*/
+/* 4.:22 */
