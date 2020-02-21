@@ -77,7 +77,48 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
+
+.social-bar{
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-whatsapp{
+    background-color: #25D366;
+    border-radius: 1rem 0 0 0;
+}
+.icon-facebook{
+    background-color: #3b5998;
+}
+.icon-instagram{
+    background-color: #3f729b;
+}
+.icon-youtube{
+    background-color: #c4302b ;
+    border-radius: 0 0 0 1rem;
+}
+.icon:hover{
+    padding-left: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0,0,0,0.42);
+}
+
+
+
 
 /* mayora 480 */
 @media screen and (max-width:768px){
